@@ -1,0 +1,11 @@
+{
+  "name": "ai-logistics-workspace",
+  "version": "2.5.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix \"mini project (1)/mini project/mini project/ai-logistics-platform\" start",
+    "test": "npm --prefix \"mini project (1)/mini project/mini project/ai-logistics-platform\" test",
+    "build": "npm --prefix \"mini project (1)/mini project/mini project/ai-logistics-platform\" run build"
+  }
+}
+

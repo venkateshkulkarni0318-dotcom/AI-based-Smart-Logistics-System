@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#080c14"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="5.5" stroke="#1e293b" stroke-width="1"/>
+  <!-- Tactical Radar Grid / Node -->
+  <circle cx="16" cy="16" r="10" stroke="#1d4ed8" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <circle cx="16" cy="16" r="5" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="16" cy="16" r="2" fill="#60a5fa"/>
+  <!-- Crosshair ticks -->
+  <line x1="16" y1="3" x2="16" y2="7" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="16" y1="25" x2="16" y2="29" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="3" y1="16" x2="7" y2="16" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="25" y1="16" x2="29" y2="16" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

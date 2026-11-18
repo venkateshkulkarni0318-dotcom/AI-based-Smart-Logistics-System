@@ -1,0 +1,10 @@
+{
+  "include": [
+    "mini project/ai-logistics-platform/ml-service"
+  ],
+  "extraPaths": [
+    "C:/Users/Nihar/AppData/Local/Python/pythoncore-3.15-arm64/Lib/site-packages",
+    "mini project/ai-logistics-platform/ml-service"
+  ],
+  "reportMissingImports": "none"
+}

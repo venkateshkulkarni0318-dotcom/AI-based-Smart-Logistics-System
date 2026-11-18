@@ -1,0 +1,28 @@
+{
+  "name": "ai-logistics-platform",
+  "version": "2.5.0",
+  "description": "AI-Driven Multi-Modal Rural Logistics & Disaster Management Platform",
+  "type": "module",
+  "scripts": {
+    "start": "node run_all.js",
+    "dev": "node run_all.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:ml": "cd ml-service && python main.py",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && node test_api.js"
+  },
+  "keywords": [
+    "multi-modal",
+    "logistics",
+    "disaster-management",
+    "offline-first",
+    "shrug",
+    "srtm",
+    "treeshap",
+    "random-forest",
+    "drone-logistics"
+  ],
+  "author": "Dept. of Computer Science & Engineering, NCET",
+  "license": "MIT"
+}

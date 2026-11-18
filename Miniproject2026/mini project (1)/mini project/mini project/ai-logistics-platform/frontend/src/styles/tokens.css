@@ -1,0 +1,208 @@
+/* ===== APPLE HUMAN INTERFACE DESIGN SYSTEM TOKENS ===== */
+/* Clean, calm, spacious, dark-mode first design language */
+
+:root {
+  /* Typography */
+  --apple-font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --apple-font-mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
+
+  /* Color Palette - Dark Canvas */
+  --apple-bg-base: #07090e;
+  --apple-bg-canvas: #0b0f19;
+  --apple-bg-surface: #0f172a;
+  --apple-bg-surface-elevated: #1e293b;
+
+  /* Glassmorphism System (Apple Frosted Glass) */
+  --apple-glass-bg: rgba(15, 23, 42, 0.72);
+  --apple-glass-bg-hover: rgba(26, 38, 66, 0.82);
+  --apple-glass-bg-active: rgba(30, 45, 78, 0.90);
+  --apple-glass-surface: rgba(18, 24, 38, 0.78);
+  --apple-glass-surface-elevated: rgba(28, 38, 60, 0.82);
+  --apple-glass-blur: blur(20px) saturate(180%);
+  --apple-glass-blur-heavy: blur(32px) saturate(200%);
+  --apple-glass-border: 1px solid rgba(255, 255, 255, 0.10);
+  --apple-glass-border-subtle: 1px solid rgba(255, 255, 255, 0.07);
+  --apple-glass-border-active: 1px solid rgba(255, 255, 255, 0.22);
+  --apple-glass-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+  --apple-glass-inner-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+
+  /* High Contrast Solid Panels (Lite Mode & Disaster Response) */
+  --apple-solid-bg: #0f172a;
+  --apple-solid-bg-elevated: #1e293b;
+  --apple-solid-border: 1px solid #334155;
+
+  /* Text & Labels (WCAG AA Contrast Compliant: >= 4.5:1) */
+  --apple-text-primary: #f8fafc;
+  --apple-text-secondary: #94a3b8;
+  --apple-text-tertiary: #64748b;
+  --apple-text-quaternary: #475569;
+  --apple-text-inverse: #07090e;
+
+  /* Functional Status Accents */
+  --apple-blue: #0071e3;
+  --apple-blue-hover: #0077ed;
+  --apple-blue-subtle: rgba(0, 113, 227, 0.16);
+
+  --apple-green: #34c759;
+  --apple-green-hover: #30d158;
+  --apple-green-subtle: rgba(52, 199, 89, 0.16);
+
+  --apple-amber: #ff9f0a;
+  --apple-amber-hover: #ffac1c;
+  --apple-amber-subtle: rgba(255, 159, 10, 0.16);
+
+  --apple-red: #ff453a;
+  --apple-red-hover: #ff5b52;
+  --apple-red-subtle: rgba(255, 69, 58, 0.18);
+
+  --apple-indigo: #5e5ce6;
+  --apple-indigo-subtle: rgba(94, 92, 230, 0.16);
+
+  --apple-purple: #bf5af2;
+  --apple-teal: #64d2ff;
+
+  /* Professional Desktop Engineering Radii (No Pill Shapes) */
+  --apple-radius-xs: 4px;
+  --apple-radius-sm: 6px;
+  --apple-radius-card: 8px;
+  --apple-radius-panel: 10px;
+  --apple-radius-modal: 12px;
+  --apple-radius-pill: 6px;
+
+  /* Layered Apple Elevation Shadows */
+  --apple-shadow-chip: 0 2px 8px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --apple-shadow-panel: 0 12px 32px -4px rgba(0, 0, 0, 0.45), 0 4px 12px -2px rgba(0, 0, 0, 0.25);
+  --apple-shadow-modal: 0 24px 64px -12px rgba(0, 0, 0, 0.65), 0 8px 24px -4px rgba(0, 0, 0, 0.35);
+  --apple-shadow-drawer: -16px 0 48px rgba(0, 0, 0, 0.60), -4px 0 16px rgba(0, 0, 0, 0.35);
+
+  /* Motion & Spring Dynamics */
+  --apple-ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --apple-duration-fast: 180ms;
+  --apple-duration-normal: 260ms;
+  --apple-duration-slow: 350ms;
+  --apple-transition-spring: 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  --apple-transition-spring-slow: 350ms cubic-bezier(0.22, 1, 0.36, 1);
+  --apple-transition-drawer: 320ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Segmented Controls & Toggles */
+  --apple-segmented-bg: rgba(255, 255, 255, 0.08);
+  --apple-segmented-pill: rgba(255, 255, 255, 0.18);
+  --apple-segmented-text: var(--apple-text-secondary);
+  --apple-segmented-active-text: #ffffff;
+
+  --apple-toggle-off: rgba(255, 255, 255, 0.16);
+  --apple-toggle-on: var(--apple-green);
+  --apple-toggle-knob: #ffffff;
+}
+
+/* ===== APPLE LIGHT THEME TOKENS (No UI Collision, Crisp WCAG AA Contrast) ===== */
+[data-theme="light"] {
+  /* Canvas & Backgrounds */
+  --apple-bg-base: #f1f5f9;
+  --apple-bg-canvas: #f8fafc;
+  --apple-bg-surface: #ffffff;
+  --apple-bg-surface-elevated: #f1f5f9;
+
+  /* Glassmorphism System - Frosted White Glass */
+  --apple-glass-bg: rgba(255, 255, 255, 0.85);
+  --apple-glass-bg-hover: rgba(255, 255, 255, 0.95);
+  --apple-glass-bg-active: rgba(241, 245, 249, 0.95);
+  --apple-glass-surface: rgba(255, 255, 255, 0.90);
+  --apple-glass-surface-elevated: rgba(255, 255, 255, 0.98);
+  --apple-glass-blur: blur(20px) saturate(180%);
+  --apple-glass-blur-heavy: blur(32px) saturate(200%);
+  --apple-glass-border: 1px solid rgba(0, 0, 0, 0.09);
+  --apple-glass-border-subtle: 1px solid rgba(0, 0, 0, 0.05);
+  --apple-glass-border-active: 1px solid rgba(0, 113, 227, 0.35);
+  --apple-glass-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  --apple-glass-inner-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+
+  /* Solid Panels */
+  --apple-solid-bg: #ffffff;
+  --apple-solid-bg-elevated: #f8fafc;
+  --apple-solid-border: 1px solid #cbd5e1;
+
+  /* Text & Labels - Dark Slate Typography (High Contrast) */
+  --apple-text-primary: #0f172a;
+  --apple-text-secondary: #334155;
+  --apple-text-tertiary: #64748b;
+  --apple-text-quaternary: #94a3b8;
+  --apple-text-inverse: #ffffff;
+
+  /* Functional Status Accents - Tuned for Light Backgrounds */
+  --apple-blue: #0071e3;
+  --apple-blue-hover: #0077ed;
+  --apple-blue-subtle: rgba(0, 113, 227, 0.12);
+
+  --apple-green: #15803d;
+  --apple-green-hover: #166534;
+  --apple-green-subtle: rgba(21, 128, 61, 0.12);
+
+  --apple-amber: #b45309;
+  --apple-amber-hover: #92400e;
+  --apple-amber-subtle: rgba(180, 83, 9, 0.12);
+
+  --apple-red: #dc2626;
+  --apple-red-hover: #b91c1c;
+  --apple-red-subtle: rgba(220, 38, 38, 0.12);
+
+  --apple-indigo: #4f46e5;
+  --apple-indigo-subtle: rgba(79, 70, 229, 0.12);
+
+  /* Layered Shadows for Light Appearance */
+  --apple-shadow-chip: 0 1px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --apple-shadow-panel: 0 10px 30px -4px rgba(0, 0, 0, 0.10), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+  --apple-shadow-modal: 0 20px 50px -10px rgba(0, 0, 0, 0.18), 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+  --apple-shadow-drawer: -12px 0 36px rgba(0, 0, 0, 0.12), -4px 0 12px rgba(0, 0, 0, 0.05);
+
+  /* Segmented Controls & Toggles */
+  --apple-segmented-bg: rgba(0, 0, 0, 0.06);
+  --apple-segmented-pill: #ffffff;
+  --apple-segmented-text: var(--apple-text-secondary);
+  --apple-segmented-active-text: #0f172a;
+
+  --apple-toggle-off: rgba(0, 0, 0, 0.16);
+  --apple-toggle-on: var(--apple-green);
+  --apple-toggle-knob: #ffffff;
+}
+
+/* Disaster Management Mode - High-Contrast Solid Override */
+[data-emergency="true"],
+.emergency-mode-active {
+  --apple-glass-bg: #0f172a;
+  --apple-glass-surface: #131b2e;
+  --apple-glass-surface-elevated: #1e293b;
+  --apple-glass-blur: none !important;
+  --apple-glass-blur-heavy: none !important;
+  --apple-glass-border: 1.5px solid #ff453a;
+  --apple-blue: #ff453a;
+  --apple-shadow-panel: 0 0 0 2px rgba(255, 69, 58, 0.4), 0 12px 32px rgba(0, 0, 0, 0.8);
+}
+
+/* Lite Mode (Bandwidth / Low CPU / Field Outpost) */
+[data-litemode="true"],
+.lite-mode-active {
+  --apple-glass-bg: #0f172a !important;
+  --apple-glass-surface: #1e293b !important;
+  --apple-glass-surface-elevated: #283548 !important;
+  --apple-glass-blur: none !important;
+  --apple-glass-blur-heavy: none !important;
+  --apple-shadow-chip: none !important;
+  --apple-shadow-panel: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  --apple-shadow-modal: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  --apple-shadow-drawer: -4px 0 12px rgba(0, 0, 0, 0.5) !important;
+  --apple-transition-spring: none !important;
+  --apple-transition-drawer: none !important;
+}
+
+/* Accessibility: Respect Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --apple-transition-spring: none !important;
+    --apple-transition-spring-slow: none !important;
+    --apple-transition-drawer: none !important;
+    --apple-duration-fast: 0ms !important;
+    --apple-duration-normal: 0ms !important;
+    --apple-duration-slow: 0ms !important;
+  }
+}
